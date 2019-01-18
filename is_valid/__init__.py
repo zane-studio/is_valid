@@ -43,11 +43,11 @@ def is_chinese_card(value):
         return temp[17] == valid_code_list[code_sum % 11]
 
     if len(value) != 18:
-        print("len not 18")
+        # print("len not 18")
         return False
 
     if not value[:17].isdigit():
-        print("not is digit")
+        # print("not is digit")
         return False
 
     return _is_birth_valid(value) and _is_code_valid(value)
